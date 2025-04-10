@@ -30,11 +30,11 @@ body {
 .login-container {
 background: white;
 padding: 20px;
-width: 310px;
-height: 460px;
-margin-bottom: -200px;
-border-radius: 15px;
-box-shadow: 6px 6px 12px;
+width: 330px;
+height: 430px;
+margin-bottom: -115px;
+border-radius: 20px;
+box-shadow: 7px 7px 7px; color: rgba(44, 44, 44, 0.514);
 flex-direction: column;
 position: absolute;
 overflow: hidden;
@@ -57,24 +57,31 @@ letter-spacing: -3px;
   background-color: rgba(116, 177, 152, 0.623);
 }
 
-.input-group input::placeholder {
-  font-weight: 600;
-  width: 42%;
-  margin-left: 25px;
-  margin-bottom: 50px;
-  height: 2px;
+.input-group input {
+  border: none;
   border-bottom: 2px solid #ccc;
-padding: 10px 5px;
-font-size: 16px;
+  background: transparent;
+  outline: none;
+  padding: 9px 5px;
+  font-size: 18px;
+  color: #333333dc;
+  width: 92%;
+  margin-bottom: 15px;
+  margin-left: 12px;
+}
 
-color: #333;
+.input-group input::placeholder {
+font-size: 16px;
+font-weight: bold;
+color: #424242b7;
 }
 
 .botão {
+  padding: 1.5px;
 margin-left: 20px;
 text-align: center;
 cursor: pointer;
-background: rgb(71, 161, 111);
+background: rgb(71, 161, 131);
 color: white;
 font-weight: 600;
 letter-spacing: -1px;
@@ -83,6 +90,13 @@ line-height: 2.0;
 border-radius: 10px;
 height: 40px;
 width: 85%;
+margin-top: 25px;
+
+transition: transform 0.4s ease;
+}
+
+.botão:hover {
+  transform: scale(1.05);
 }
 
 .cabecalho {
@@ -102,20 +116,50 @@ transform: translateY(-10px);
 transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.logo:hover {
+  transform: scale(1.07);
+}
+
 .cabecalho:hover {
 background: rgb(142, 207, 175);
 transform: translateY(0);
 }
 
-.cabecalho logo {
-width: 1000px;
-height: auto;
-margin-top: -470px;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-z-index: 2;
+.logo {
+  transition: transform 0.3s ease;
+  width: 230px; 
+  z-index: 2;
+  height: auto;
+  margin: 0 auto;
 }
 
+.log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -480px;
+}
 
+.jaassinei a, .esqueci a {
+  text-decoration: none;
+font-weight: bold;
+color: #424242b7;
+}
+
+.jaassinei {
+
+  font-size: 14px;
+  padding: 50px 5px;
+  margin-bottom: -35px;
+  margin-left: 3px;
+}
+
+.esqueci {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.jaassinei a:hover,.esqueci a:hover {
+  text-decoration: underline;
+  color: rgb(66, 148, 114); /* ou o tom verde do seu botão */
+}
