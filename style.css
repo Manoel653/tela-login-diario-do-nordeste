@@ -24,8 +24,19 @@ body {
    height: 100vh;
    padding:0;
    margin:0;
+   animation: fadeUp 1.0s ease-out;
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .login-container {
 background: white;
@@ -159,7 +170,8 @@ color: #424242b7;
   font-size: 14px;
 }
 
-.jaassinei a:hover,.esqueci a:hover {
+.jaassinei a:hover,
+.esqueci a:hover {
   text-decoration: underline;
   color: rgb(66, 148, 114); /* ou o tom verde do seu botão */
 }
